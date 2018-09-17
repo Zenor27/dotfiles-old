@@ -1,0 +1,62 @@
+
+"Add pathogen tpope plugin manager
+execute pathogen#infect()
+
+
+"Set encoding
+set encoding=utf-8 fileencodings=
+
+"Syntax coloration
+syntax on
+
+"Print lines number
+set number 
+
+"Show match between brackets etc.
+set showmatch
+
+"Keep indent for line return
+set autoindent
+
+"Set number of space for tab
+set shiftwidth=4
+set sts=4
+set expandtab
+set smarttab
+
+"reacts to the syntax/style of the code you are editing 
+set smartindent
+
+"Set column at 80
+set colorcolumn=80
+
+"Set theme
+colorscheme hybrid
+
+"Activate mouse using
+set cursorline
+set mouse=a
+
+"Enable function folding
+set foldenable
+set foldmethod=syntax
+set foldcolumn=4
+set foldlevel=999
+
+
+"Enable parenthesis color matching
+let g:rainbow_active = 1
+
+
+"Recommended settings for syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
+"Map syntastic close tab
+:nnoremap <C-l> :lclose<CR>
