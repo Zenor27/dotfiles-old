@@ -1,7 +1,9 @@
-#Dotfiles
-This repository contain all my configuration files from EPITA.
+﻿# DOTFILES
 
-#VIM Plugins
+This repository contain all my configurations files from EPITA
+
+
+# VIM PLUGINS
 
 - AutoComplPop
 - Pathogen
@@ -9,7 +11,5 @@ This repository contain all my configuration files from EPITA.
 - Syntastic
 - Vim Airline
 - Hybrid
-
-#####Antoine MONTES - ASM 2021
-
-
+#
+##### Antoine MONTES - ASM 2021
