@@ -9,4 +9,8 @@ export NNTPSERVER="news.epita.fr"
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+alias clr='clear'
+
+alias importmakefile='cp ~/afs/Script/Makefile .'
+
 source ~/afs/Script/fancy_lock.sh 

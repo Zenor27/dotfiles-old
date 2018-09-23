@@ -2,6 +2,8 @@
 "Add pathogen tpope plugin manager
 execute pathogen#infect()
 
+"Makefile rule
+autocmd fileType make setlocal noexpandtab
 
 "Set encoding
 set encoding=utf-8 fileencodings=
@@ -60,3 +62,10 @@ let g:syntastic_check_on_wq = 0
 
 "Map syntastic close tab
 :nnoremap <C-l> :lclose<CR>
+
+"Map autoindent
+:nnoremap <C-i> gg=G''<CR>
+
+
+
+
