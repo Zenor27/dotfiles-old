@@ -1,0 +1,7 @@
+*utf8: always
+
+urxvt*transparent: true
+urxvt*shading: 15
+
+urxvt*font: xft:DejaVu Sans Mono:size=11
+
