@@ -66,6 +66,16 @@ let g:syntastic_check_on_wq = 0
 "Map autoindent
 :nnoremap <C-i> gg=G''<CR>
 
+:nnoremap <S-tab> gt
 
+"LightLine settings"
+set laststatus=2
+set noshowmode
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
+"Whitespace show"
+set list listchars=trail:.
 
 
