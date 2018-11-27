@@ -1,16 +1,48 @@
+# EPITA BASHRC
+# AUTHORS: antoine.montes
 
 [[ $- != *i* ]] && return
 
 export LANG=en_US.utf8
 export NNTPSERVER="news.epita.fr"
 
-#export EDITOR=vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+
+
+LS_COLORS=$LS_COLORS:'di=1;35:'
+export LS_COLORS
+
+
+fill="--- "
+reset_style='\[\033[00m\]'
+status_style=$reset_style'\[\033[0;90m\]'
+prompt_style=$reset_style
+command_style=$reset_style'\[\033[1;29m\]'
+
+PS1="$status_style"'$fill \t\n'"$prompt_style"'[antoine \w]'"$command_style "
+
+trap 'echo -ne "\033[00m"' DEBUG
+
+function prompt_command
+{
+    let fillsize=${COLUMNS}-9
+        fill=""
+        while [ "$fillsize" -gt "0" ]; do
+            fill="-${fill}" # fill with underscores to work on
+            let fillsize=${fillsize}-1
+        done
+}
+
+PROMPT_COMMAND=prompt_command
 
 alias clr='clear'
-
 alias importmakefile='cp ~/afs/Script/Makefile .'
-
-source ~/afs/Script/fancy_lock.sh 
+alias c='cd'
+alias sl='ls'
+alias setnom='echo "montes"'
+alias kbus='setxkbmap us'
+alias kbfr='setxkbmap fr'
+source ~/afs/Script/fancy_lock.sh
