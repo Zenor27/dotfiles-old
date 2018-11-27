@@ -9,7 +9,7 @@ This repository contain all my configurations files from EPITA
 - Pathogen
 - Rainbow
 - Syntastic
-- Vim Airline
+- Lightline
 - Hybrid
 #
 ##### Antoine MONTES - ASM 2021
