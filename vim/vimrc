@@ -12,7 +12,10 @@ set encoding=utf-8 fileencodings=
 syntax on
 
 "Print lines number
-set number 
+:set relativenumber
+:set norelativenumber " turn relative line numbers off
+:set relativenumber!  " toggle relative line numbers
+
 
 "Show match between brackets etc.
 set showmatch
@@ -54,13 +57,14 @@ let g:rainbow_active = 1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 
 "Map syntastic close tab
+:nnoremap <C-p> :SyntasticToggleMode<CR>
 :nnoremap <C-l> :lclose<CR>
 
 "Map autoindent
@@ -77,5 +81,9 @@ let g:lightline = {
 
 "Whitespace show"
 set list listchars=trail:.
+"Hightlight search
+set hls is
 
-
+let &t_SI = "\<esc>[5 q"  " blinking I-beam in insert mode
+let &t_SR = "\<esc>[3 q"  " blinking underline in replace mode
+let &t_EI = "\<esc>[ q"  " default cursor (usually blinking block) otherwise

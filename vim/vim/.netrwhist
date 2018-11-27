@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/afs/cri.epita.net/user/a/an/antoine.montes/u/.confs/vim'
+let g:netrw_dirhist_2='/afs/cri.epita.net/user/a/an/antoine.montes/u/ING1/MyReadISO/antoine.montes-myreadISO/tests'
+let g:netrw_dirhist_3='/afs/cri.epita.net/user/a/an/antoine.montes/u/ING1/MyReadISO/antoine.montes-myreadISO/tests/validation_test'
+let g:netrw_dirhist_4='/home/antoine.montes/.vim'
+let g:netrw_dirhist_5='/home/antoine.montes/.config'
+let g:netrw_dirhist_6='/afs/cri.epita.net/user/a/an/antoine.montes/u/.confs/vim'
